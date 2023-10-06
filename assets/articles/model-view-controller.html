@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Varela&family=Varela+Round&display=swap"
+    rel="stylesheet" />
+  <title>What is Model-View-Controller?</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: poppins;
+      color: white;
+      background-color: rgb(37, 37, 46);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+    .blog {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .blog-heading span {
+      text-align: left;
+    }
+
+    .blog-heading h3 {
+      font-size: 2.4rem;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    .blog-date {
+      text-align: center;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .key-features {
+      font-size: 1.1rem;
+      list-style: circle;
+      text-align: left;
+    }
+
+    #text {
+      font-size: 1.1rem;
+      text-align: start;
+    }
+
+    .requirements {
+      font-size: 1.1rem;
+      text-align: left;
+    }
+
+    .blog-pic {
+      display: flex;
+      justify-content: center;
+    }
+
+    .blog-pic img:last-child {
+      margin-left: 30px;
+    }
+
+    .btn-examples {
+      display: flex;
+      justify-content: center;
+      margin-right: 20px;
+    }
+
+    h3 {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-bar {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .nav-bar a {
+      margin-right: 20px;
+      color: #8CC2DD;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="blog">
+    <div class="nav-bar">
+      <a id="home" href="/index.html">Home</a>
+      <a href="mailto:kh4nhcodes@gmail.com">Contact</a>
+    </div>
+    <div class="blog-container">
+      <div class="blog-heading">
+        <h3>Let's talk &lt;MVC&gt;!</h3>
+      </div>
+      <div class="blog-date">
+        Oct 1, 2023
+      </div>
+      <br>
+      <div class="blog-text">
+        <p>
+          Model-View-Controller (MVC) is a design pattern commonly used in software engineering and programming to
+          organize the structure of an application, especially in the context of building user interfaces. It is widely
+          used in various programming languages and frameworks, including Java Spring, Ruby on Rails, Django, ASP.NET
+          MVC, and many others.
+        </p>
+        <br />
+        <h2>Key Benefits</h2>
+        <ol class="key-features">
+          <br>
+          <li><strong>Separation of Concerns</strong>: MVC separates the different aspects of an application (data,
+            presentation, and control logic) into distinct components, making the codebase more modular and easier to
+            maintain.</li>
+          <br>
+          <li><strong>Reusability</strong>: Components in the MVC pattern can often be reused in different parts of the
+            application or even in other applications.</li>
+          <br>
+          <li><strong>Testability</strong>: The separation of concerns makes it easier to write unit tests for
+            individual components, leading to better code quality and reliability.</li>
+          <br>
+          <li><strong>Scalability</strong>: It allows for easier scaling of the application since different parts can be
+            modified or extended without affecting the others.</li>
+        </ol>
+        <br>
+        <h2>Components</h2>
+        <br>
+        <p id="text">MVC seperates an application into three interconnected components consisting of: </p>
+        <ol class="requirements">
+          <li><strong>Model</strong>: The Model represents the application's data and business logic. It is responsible
+            for managing and manipulating data, as well as responding to requests for information. In many cases, the
+            Model is also responsible for data validation and persistence. It ensures the integrity of the data and
+            communicates any changes to the View and Controller.
+          </li>
+          <br>
+          <li><strong>View</strong>: The View is responsible for presenting the data to the user and rendering the user
+            interface. It takes data from the Model and displays it in a format that is understandable to the user.
+            Views can include various elements like buttons, text fields, images, and more. They are typically passive
+            and do not contain application logic.
+          </li>
+          <br>
+          <li><strong>Controller</strong>: The Controller acts as an intermediary between the Model and the View. It
+            handles user input and translates it into actions that affect the Model or View. Controllers receive user
+            requests, process them, update the Model as necessary, and then update the View to reflect any changes. They
+            contain the application's logic for responding to user interactions.
+          </li>
+          <br>2222
+          <br>
+          <ol>
+
+            <br>
+            <br>
+            <h3>Model-View Controller Example</h3>
+            <br>
+            <div class="blog-pic">
+              <img src="/assets/images/mvc-ex1.png" alt="mvc1">
+              <img src="/assets/images/mvc-ex2.png" alt="mvc2">
+            </div>
+            <br>
+            <br>
+            <ul style="font-size: 1.1rem">
+              <li> In this example, the TasksController receives requests from the user (e.g., to display the list of
+                tasks or to create a new task).
+              </li>
+              <br>
+              <li> It interacts with the Task model to retrieve or modify data as necessary, and then renders the
+                appropriate view (using the Razor templating engine).
+              </li>
+              <br>
+              <li> The views are responsible for displaying data to the user and handling user interactions (e.g.,
+                submitting a new task).
+              </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Varela&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>What is Bootstrap?</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        font-family: poppins;
+        color: white;
+        background-color: rgb(37, 37, 46);
+      }
+
+      h1 {
+        font-size: 3em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+      }
+
+      .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 40px;
+      }
+      
+      .blog-heading span{
+        text-align: left;
+      }
+
+      .blog-heading h3 {
+        font-size: 2.4rem;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .blog-date {
+        text-align: center;
+      }
+
+      p {
+        font-size: 2rem;
+      }
+
+      .key-features{
+        font-size: 1.1rem;
+        list-style:circle;
+        text-align:left;
+      }
+
+      #text{
+        font-size: 1.1rem;
+        text-align: start;
+      }
+
+      .requirements{
+        font-size: 1.1rem;
+        text-align:left;
+      }
+
+      .blog-pic {
+        display: flex;
+        justify-content: center;
+      }
+
+      .btn-examples{
+        display: flex;
+        justify-content: center;
+      }
+
+      h3 {
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav-bar {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      .nav-bar a{
+        margin-right: 20px;
+        color: #8CC2DD;
+      }
+
+    </style>
+  </head>
+
+
+  <body>
+    <div class="blog">
+      <div class="nav-bar">
+        <a id="home" href="/index.html">Home</a>
+        <a href="mailto:kh4nhcodes@gmail.com">Contact</a>
+      </div>
+      <div class="blog-container">
+        <div class="blog-heading">
+          <h3>Let's talk &lt;Bootstrap&gt;!</h3>
+        </div>
+        <div class="blog-date">
+        Oct 5, 2023
+        </div>
+        <br>
+        <div class="blog-text">
+          <p>
+            Bootstrap is a popular open-source front-end framework for web
+            development. It was created by Twitter and is now maintained by the
+            Bootstrap community. Bootstrap provides a collection of pre-designed
+            and pre-built HTML, CSS, and JavaScript components and templates
+            that make it easier to create responsive and visually appealing
+            websites and web applications.
+          </p>
+          <br />
+          <h2>Key Features</h2>
+          <ol class="key-features">
+            <br>
+            <li><strong>Responsive Design</strong>: Bootstrap is known for its responsive design features, which means that websites built using Bootstrap can automatically adapt to different screen sizes and devices, such as desktops, tablets, and smartphones. This is achieved through a grid system and responsive CSS classes.</li>
+            <br>
+            <li><strong>Grid System</strong>: Bootstrap includes a flexible and responsive grid system that allows developers to create complex layouts with rows and columns. This grid system helps in organizing and aligning content on the page, ensuring it looks good on various screen sizes.</li>
+            <br>
+            <li><strong>CSS Components</strong>: Bootstrap provides a set of CSS classes and styles for common UI elements like buttons, forms, typography, navigation bars, alerts, modals, and more. Developers can use these pre-styled components to quickly build consistent and attractive user interfaces.</li>
+            <br>
+            <li><strong>JavaScript Components</strong>: Bootstrap includes JavaScript plugins and components that enhance interactivity and functionality. Examples include carousels, tooltips, popovers, modals, and dropdown menus. These components are often easy to implement and customize.</li>
+            <br>
+            <li><strong>Theming and Customization</strong>: Bootstrap allows developers to customize the look and feel of their websites by leveraging variables and SASS (Syntactically Awesome Style Sheets). This flexibility enables the creation of unique designs while still benefiting from Bootstrap's core features.</li>
+          </ol>
+          <br>
+          <h2>Adding Bootstrap to your Project</h2>
+          <br>
+          <p id="text">Adding Bootstrap to your project requires: </p>
+          <ol class="requirements">
+            <li><strong>Include Viewport Tag</strong>: Create a new index.html file in your project root and include the <meta name="viewport"> tag as well for proper responsive behavior for mobile devices.</li>
+              <br>
+            <li><strong>Include Bootstrap's CSS and JS(optional)</strong>: Add a link to Bootstrap's CSS file in the <head> section of your HTML file. You can either link to the Bootstrap CSS file hosted on a CDN or use a local copy if you've downloaded it.</li>
+            <br>
+          <ol>
+          <div class="blog-pic">
+             <img src="/assets/images/bootstrap-example.png" alt="bootstrap">
+          </div>
+          <br>
+          <br>
+          <h3>Bootstrap Button Example</h3>
+          <br>
+          <div class="blog-pic">
+            <img src="/assets/images/buttons-example-img.png" alt="">
+          </div>  
+          <div class="blog-pic">
+            <img src="/assets/images/buttons-example.png" alt="bootstrap">
+         </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

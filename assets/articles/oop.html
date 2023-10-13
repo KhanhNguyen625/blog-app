@@ -74,7 +74,8 @@
 
         .blog-pic {
             display: flex;
-            justify-content: center;
+            justify-content: left;
+            align-items: left;
         }
 
         .blog-pic img:last-child {
@@ -126,13 +127,14 @@
                     OOP, or Object-Oriented Programming, is a programming paradigm that uses objects and classes as
                     fundamental building blocks for organizing and structuring code. The main idea behind OOP is to
                     model real-world entities and their interactions in a way that is both intuitive and efficient for
-                    software development. OOP uses classes as blueprints to define the structure and behavior of objects, and objects are specific instances of these classes with their own unique characteristics. 
+                    software development. OOP uses classes as blueprints to define the structure and behavior of
+                    objects, and objects are specific instances of these classes with their own unique characteristics.
                 </p>
                 <br />
                 <h2>Four Pillars of OOP</h2>
                 <ol class="key-features">
                     <br>
-                    <p id="text">Object-Oriented Programming (OOP) consists of four core pillars, which are:  </p>
+                    <p id="text">Object-Oriented Programming (OOP) consists of four core pillars, which are: </p>
                     <li><strong>Encapsulation</strong>: Encapsulation is the practice of bundling data (attributes) and
                         the methods that operate on that data into a single unit (i.e., an object). This concept helps
                         hide the internal implementation details of an object and exposes only the necessary interfaces
@@ -155,66 +157,62 @@
                         work with objects of various types without knowing their specific classes.</li>
                 </ol>
                 <br>
-                <h2>Components</h2>
                 <br>
-                
-                <ol class="requirements">
-                    <li><strong>Model</strong>: The Model represents the application's data and business logic. It is
-                        responsible
-                        for managing and manipulating data, as well as responding to requests for information. In many
-                        cases, the
-                        Model is also responsible for data validation and persistence. It ensures the integrity of the
-                        data and
-                        communicates any changes to the View and Controller.
-                    </li>
-                    <br>
-                    <li><strong>View</strong>: The View is responsible for presenting the data to the user and rendering
-                        the user
-                        interface. It takes data from the Model and displays it in a format that is understandable to
-                        the user.
-                        Views can include various elements like buttons, text fields, images, and more. They are
-                        typically passive
-                        and do not contain application logic.
-                    </li>
-                    <br>
-                    <li><strong>Controller</strong>: The Controller acts as an intermediary between the Model and the
-                        View. It
-                        handles user input and translates it into actions that affect the Model or View. Controllers
-                        receive user
-                        requests, process them, update the Model as necessary, and then update the View to reflect any
-                        changes. They
-                        contain the application's logic for responding to user interactions.
-                    </li>
-                    <br>
-                    <br>
-                    <ol>
-
+                <br>
+                <h2>Encapsulation</h2>
+                <div class="blog-pic">
+                    <ol style="font-size: 1.1rem; text-align:left;">
+                        <p id="text">An example of Encapsulation: </p>
+                        <li>Lets say we had a class called <strong>'BankAccount'</strong> that encapsulates the account balance using a private field <strong>'balance'</strong>.</li>
                         <br>
+                        <li>Public methods <strong>('Deposit', 'Withdraw', and 'GetBalance')</strong> provide controlled access to manipulate and retrieve the <strong>'balance'</strong>.</li>
                         <br>
-                        <h2>Encapsulation</h2>
+                        <li>The private <strong>balance</strong> field can only be modified or accessed through the methods defined in the class, ensuring that the internal state is encapsulated and not directly accessible from outside the class.</li>
                         <br>
-                        <div class="blog-pic">
-                            <img src="/assets/images/mvc-ex1.png" alt="mvc1">
-                            <img src="/assets/images/mvc-ex2.png" alt="mvc2">
-                        </div>
+                    </ol>
+                </div>
+                <br>
+                <br>
+                <h2>Abstraction</h2>
+                <div class="blog-pic">
+                    <ol style="font-size: 1.1rem; text-align:left;">
+                        <p id="text">An example of Abstraction: </p>
+                        <li>Lets say we had an abstract class called <strong>Shape</strong> with an abstract method called <strong>CalculateArea().</strong></li>
                         <br>
+                        <li>Concrete classes like <strong>'Circle'</strong> and 'Rectangle' inherit from <strong>'Shape'</strong> and provide their own implementations of <strong>'CalculateArea'.</strong></li>
                         <br>
-                        <ul style="font-size: 1.1rem">
-                            <li> In this example, the TasksController receives requests from the user (e.g., to display
-                                the list of
-                                tasks or to create a new task).
-                            </li>
-                            <br>
-                            <li> It interacts with the Task model to retrieve or modify data as necessary, and then
-                                renders the
-                                appropriate view (using the Razor templating engine).
-                            </li>
-                            <br>
-                            <li> The views are responsible for displaying data to the user and handling user
-                                interactions (e.g.,
-                                submitting a new task).
-                            </li>
-                        </ul>
+                        <li>The details of how each shape calculates its area are abstracted away from the user of the classes.</li>
+                        <br>
+                    </ol>
+                </div>
+                <br>
+                <br>
+                <h2>Inheritance</h2>
+                <div class="blog-pic">
+                    <ol style="font-size: 1.1rem; text-align:left;">
+                        <p id="text">An example of Inheritance: </p>
+                        <li>Lets say we had a class called <strong>'Dog'</strong> that inherits the <strong>'Name'</strong> property and <strong>'Eat()'</strong> method from the <strong>'Animal'</strong> base class.</li>
+                        <br>
+                        <li>It also adds its own method, <strong>'Bark()'</strong>.</li>
+                        <br>
+                    </ol>
+                </div>
+                <br>
+                <br>
+                <h2>Polymorphism</h2>
+                <div class="blog-pic">
+                    <ol style="font-size: 1.1rem; text-align:left;">
+                        <p id="text">An example of Polymorphism: </p>
+                        <li>Lets say we had a class called <strong>'Animal'</strong> with a virtual method <strong>'MakeSound'</strong>.</li>
+                        <br>
+                        <li>Two derived classes, <strong>'Dog'</strong> and <strong>'Cat'</strong>, override the <strong>'MakeSound'</strong> method to provide their specific sound behaviors.</li>
+                        <br>
+                        <li>In the <strong>'Main'</strong> method, we create instances of both <strong>'Dog'</strong> and <strong>'Cat'</strong> and assign them to an <strong>'Animal'</strong> reference.</li>
+                        <br>
+                        <li>When we call the <strong>'MakeSound'</strong> method on the myAnimal reference, it behaves differently based on the actual type of the object it's pointing to. This demonstrates run-time polymorphism, as the method to be executed is determined at runtime based on the actual object's type.</li>
+                    </ol>
+                </div>
+                <br>
             </div>
         </div>
     </div>
